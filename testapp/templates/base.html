@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing</title>
+</head>
+<body>
+    <h2>whatsupppp</h2>
+        <p>
+            <a href="{% url 'testapp:index' %}">Testapp</a> -
+            <a href="{% url 'testapp:topics' %}">Topics</a>
+        </p>
+
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>

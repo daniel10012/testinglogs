@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <ul>
+            {% for topic in topics %}
+            <li>{{topic}}</li>
+            {% empty %}
+                <li>No topics have been added yet.</li>
+            {% endfor %}
+        </ul>
+
+
+
+    <button><a href="{% url 'testapp:new_topic' %}">add a topic here</a></button>
+
+
+{% endblock content %}
